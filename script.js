@@ -126,7 +126,8 @@ function checkPalindrome(forWord) {
     for (let i = forWord.length - 1; i > -1; i--) {
        backWord += forWord[i]
     } 
-    if (backWord === forWord) {
+    if (backWord === forWord) { /* (backWord === forWord gives a boolean anyway, so no 'if' 
+    statement required. Just return (backWord === forWord). */
         return true
     } else {
         return false
@@ -134,6 +135,10 @@ function checkPalindrome(forWord) {
 }
 
 // Note the cool pun I added there (the word is the same forwards as it is backwards - get it?)
+
+/* Also, we can call the previous function reverseString(string) to make the solution here less 
+wordy - I treated the exercise as an individual exercise ie. in the world of Exercise 7, no other 
+exercise and its contents exist */
 
 console.log('Exercise 7 Result:', checkPalindrome("taco"));
 
