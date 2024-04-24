@@ -55,7 +55,7 @@ function isCharAVowel(character) {
         return false
     }
 }
-// vowels.includes(character) gives a boolean anyway so scrap the 'if' statement - return vowels.includes(character) instead
+// vowels.includes(character) gives a boolean anyway so scrap the 'if' statement - return vowels.includes(character) instead to make it easier
 
 console.log('Exercise 3 Result:', isCharAVowel("o"));
 
