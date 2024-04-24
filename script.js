@@ -47,14 +47,15 @@ Complete the exercise in the space below:
 */
 
 function isCharAVowel(character) {
-    const vowels = ["a", "e", "i", "o", "u"]
+    const vowels = ["a", "e", "i", "o", "u"] /* also add uppercase (A, E, I, O, U) to array, or 
+    aeiouAEIOU.includes(character) */
     if (vowels.includes(character)) {
         return true
     } else {
         return false
     }
 }
-
+// vowels.includes(character) gives a boolean anyway so scrap the 'if' statement - return vowels.includes(character) instead
 
 console.log('Exercise 3 Result:', isCharAVowel("o"));
 
@@ -161,6 +162,8 @@ function maxOfThree(num1, num2, num3) {
         return num3
     }
 }
+
+// return Math.max(num1, num2, num3) is the much easier and more versatile solution
 
 console.log('Exercise 8 Result:', maxOfThree(10, 10, 7));
 
