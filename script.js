@@ -133,6 +133,8 @@ function checkPalindrome(forWord) {
     }
 }
 
+// Note the cool pun I added there (the word is the same forwards as it is backwards - get it?)
+
 console.log('Exercise 7 Result:', checkPalindrome("taco"));
 
 /*
